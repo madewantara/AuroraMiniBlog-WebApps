@@ -1,0 +1,18 @@
+.box:hover {
+  transition: .5s ease;
+  -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05); 
+  transform: scale(1.05); 
+}
+
+.notif {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  vertical-align: middle; 
+  transform: translate(-50%, -50%);
+}
+
+.sidebar-brand img{
+  height: 70px;
+}

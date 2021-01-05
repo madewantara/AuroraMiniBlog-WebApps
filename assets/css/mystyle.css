@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%;
+}
+.carousel-header{
+    margin-top: -80px;
+    padding: 0px 0px;
+}
+.carousel-item img{
+    height: 101vh;
+    object-fit: cover;
+}
+
+nav .navbar-brand img{
+    height: 70px;  
+}
+
+@keyframes beat {
+    0%{
+        border-bottom: none;
+    }
+    50%{
+        border-bottom:2px solid whitesmoke;
+    }
+    100%{
+        border-bottom: none;
+    }
+}
+.form-inline input{
+    border-radius: 30px;
+    padding: 0px 12px;
+}
+.form-inline button{
+    width: 37px;
+    height: 35px;
+    background: none;
+    border: none;
+}
+nav{
+    z-index: 999;
+    height: 70px;
+}
+.nav-design{
+    background-color: #ffb223;
+}
+.nav-link{
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+/* Recent Post */
+.recent-post{
+    background-color: white;
+}
+.carousel-item .card{
+    border: none;
+    border-radius: 0px 0px 0px 0px;
+    background-color: whitesmoke;
+}
+.slide-img img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0px 0px 0px 0px;
+}
+.read-btn{
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb223;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    float: right;
+}
+.read-btn:hover{
+    color: #ffb223;
+    background-color:white ;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+.slide-btn{
+    opacity: 60%;
+}
+.slide-btn:hover{
+    opacity: 100%;
+}
+.card-design{
+    border-style: none;
+    box-shadow:none;
+}
+.card-design:hover{
+    transition: .5s ease;
+    -ms-transform: scale(1.02); 
+    -webkit-transform: scale(1.02); 
+    transform: scale(1.02); 
+}
+/* Kategori*/
+.kategori{
+    background-color: #ffb223;
+}
+.box{
+    position: relative;
+    display: inline-block; 
+}
+.box img{
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+}
+.box .caption-content{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-align: center;
+    width: 60%; 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(41, 34, 34);
+}
+
+.box:hover .overlay {
+    opacity: 0.8;
+    -ms-transform: scale(0.9); 
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
+}
+
+.box:hover .image {
+    transition: .5s ease;
+    -ms-transform: scale(0.9); 
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
+}
+
+.box-kategori{
+    position: relative;
+    width: 100%;
+}
+.box-kategori .caption-content{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-align: center;
+    width: 60%; 
+}
+
+.overlay-kategori {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 100%;
+    opacity: 70%;
+    background-color: rgb(41, 34, 34);
+}
+/* Akhir Kategori */
+
+/* Post Per Kategori */
+.kategori-name{
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+}
+.seemore{
+    color: #ffb223;
+    font-size: 18px;
+    font-weight: 500;
+    float: right;
+}
+.seemore:hover{
+    color: #ffb223;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    background-color: rgba(114, 114, 114, 0.582);
+    visibility: hidden;
+}
+.card-img-overlay-post{
+    text-align: center;
+    padding: 20px;
+    z-index: 999;
+}
+.slide-img:hover .card-img-overlay{
+    visibility: visible;
+    animation: fade 0.5s;   
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Footer */
+footer{
+    background-color: #ffb223;
+}
+.page-footer h5{
+    color: white;
+}
+#formContact label{
+    color: white;
+}
+#formContact .error{
+    color: pink;
+}
+.footer-copyright{
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Login, register */
+.login-page {
+    height: 100vh;
+    background: whitesmoke;
+}
+.register-page {
+    background: whitesmoke;
+}
+.h4{
+    font-family: sans-serif;
+    font-size: 28pt;
+    padding-bottom: 10pt;
+}
+.h5{
+    color: red;
+}
+.box-login{
+    padding-top: 6%;
+}
+.error{
+    color: red;
+    font-family: sans-serif;
+    font-size: 9pt;
+}
+.small{
+    color: #ffb223;
+}
+
+.small:hover{
+    color: #ffb223;
+}
+.login-page .card{
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.login-page .card-body{
+    border-radius: 25px;
+}
+.login-page .btn{
+    background-color: #ffb223;
+    color: white;
+}
+
+.login-page .btn:hover{
+    color: white;
+    background-color:#ed9a00 ;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.contact-page button{
+    background-color: #ffb223;
+    color: white;
+}
+
+.contact-page button:hover{
+    color: white;
+    background-color:#ed9a00 ;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.register-page .card{
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.register-page .card-body{
+    border-radius: 25px;
+}
+.register-page .btn{
+    background-color: #ffb223;
+    color: white;
+}
+
+.register-page .btn:hover{
+    color: white;
+    background-color:#ed9a00 ;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+#captcha1{
+    font-size: 30pt;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+.h6{
+    color: red;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+#konfirmasi{
+    text-align: center;
+    font-size: 30pt;
+}
+
+/* Foto Profil */
+.fotoprofil{
+    position: relative;
+    object-fit: cover;
+    margin-left: 25%;
+}
+.fotoprofil img{
+    cursor: pointer;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+.fotoprofil h3{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 43%;
+    text-align: center;
+    width: 100%; 
+}
+.overlay-fotoprofil{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    visibility: hidden;
+}
+.fotoprofil:hover .overlay-fotoprofil{
+    z-index: 999;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation : fade 0.5s; 
+}
+
+/* Akhir Foto Profil */
+.galeri-penulis{
+    min-height: 49vh;
+}
+.readmore{
+    color: black;
+    text-decoration: none;
+}
+.readmore:hover{
+    color: #ffb223;
+    text-decoration: none;
+}
+.hero img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.post{
+    margin-top: 30px;
+    
+}
+.isipost{
+    margin-top: 10px;
+    text-align: justify;
+}
+.tentang{
+    text-align: center;
+}
+.box-judul{
+    background-color: #fda500;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px ;
+}
+.tentang-penulis{
+    margin-top: 10px;
+    border: 0.5px solid gainsboro;
+}
+.tentang img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.rpost{
+    margin-top: 20px;
+}
+.rpost-recent{
+    text-align: center;
+    margin-top: 10px;
+    border: 0.5px solid gainsboro;
+    padding: 20px;
+}
